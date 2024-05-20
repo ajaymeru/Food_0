@@ -335,9 +335,114 @@ a {
 
 .chef {
     width: 100%;
-    height: 20vh;
-    background: #EBF0E4;
-}
+    background: #ebf0e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .chef .chef-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #leaf {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 32px;
+    top: 90px;
+  }
+  #men {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 35px;
+    bottom: 50px;
+  }
+  .chef .chef-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-right: 100px;
+  }
+  
+  .chef .chef-right h1 {
+    font-size: 90px;
+    text-align: start;
+  }
+  
+  .chef .chef-right p {
+    opacity: 80%;
+    color: gray;
+    font-size: 24px;
+  }
+  
+  #leaf2 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 250px;
+    top: 20px;
+  }
+  /* Media Query for section 3 chef */
+  @media (max-width: 1168px) {
+    .chef {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .chef .chef-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 30px;
+    }
+    .chef .chef-right h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+    #men {
+      width: 375px;
+      height: 400px;
+      position: relative;
+      left: -68px;
+      bottom: 50px;
+    }
+    #leaf {
+      position: relative;
+      left: -71px;
+    }
+    #leaf2 {
+      position: relative;
+      left: 20px;
+      top: -25px;
+    }
+    .menu-heading-img img {
+      width: 300px;
+    }
+    .spices img {
+      width: 100px;
+    }
+    .cooked-meat {
+      width: 100px;
+    }
+    .headline-hero h1 {
+      font-size: 75px;
+    }
+    .headline-hero p {
+      font-size: 21px;
+    }
+    .pricelists h6 {
+      font-size: 26px;
+      text-align: center;
+    }
+  }
 
 /* ..............features........................ */
 .features {
@@ -375,6 +480,69 @@ a {
     text-align: center;
     padding: 5px 0;
 }
+
+/* ..............Reservation........................ */
+
+.reserve {
+    width: 100%;
+    height: 100vh;
+    background-color: #ebf0e4;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 20px;
+  }
+  
+  .reserve span h6 {
+    opacity: 70%;
+    color: gray;
+  }
+  
+  .reserve .dropBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    row-gap: 25px;
+    align-items: center;
+    position: relative;
+    top: 190px;
+    flex-wrap: wrap;
+  }
+  
+  .reserve .dropBox .box1 {
+    width: 250px;
+    height: 45px;
+    border: 2px solid black;
+  }
+  
+  .reserve .dropBox .box1 img {
+    width: 200px;
+    height: 20px;
+    position: relative;
+    bottom: 3px;
+  }
+  
+  .reserve .dropBox .box1 p {
+    font-size: 17px;
+    text-align: center;
+    position: absolute;
+    top: 13px;
+  }
+  
+  #button {
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: green;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 300px;
+  }
+  
+  
 
 /* .......section 5 recent posts............. */
 .recent_post {
@@ -526,3 +694,114 @@ a {
 .button-arrow {
     font-size: 30px;
 }
+
+/*Footer Section*/
+  
+  .allfooter {
+    background-color: #233000;
+    width: 100%;
+    padding: 50px;
+    margin-top: 20px;
+  }
+  
+  .footer {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 50px;
+  }
+  
+  .footer .leftside {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 150px;
+  }
+  
+  .footer .leftside .contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .footer .rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 20px;
+    position: relative;
+    left: 70px;
+    flex-wrap: wrap;
+  }
+  
+  .footer .rightside .recipe {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .rightside h2 {
+    position: relative;
+    top: -10px;
+  }
+  
+  #btn {
+    width: 300px;
+    height: 40px;
+    background: none;
+    text-align: start;
+    color: white;
+    border: 1.5px solid black;
+    padding: 10px;
+  }
+  
+  #p {
+    font-size: 12px;
+  }
+  
+  .footer .subscribe button {
+    width: 150px;
+    height: 40px;
+    background: none;
+    background-color: #5e6600;
+    text-align: center;
+    color: white;
+    position: relative;
+    right: 25px;
+    top: 6px;
+  }
+  
+  .allfooter .horizantal {
+    border-top: 5px dotted white;
+    line-height: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .allfooter .horizantal .end-left p{
+    font-size: 18px;
+    color: white;
+  }
+  
+  .allfooter .horizantal .end-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+  }
+  
+  .allfooter .horizantal .end-right img{
+    width: 25px;
+    height: 25px;
+  }
+
+  /* End */

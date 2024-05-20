@@ -1,0 +1,528 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1500px) {
+    body {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar//////////////////////////////////////// */
+.navbar {
+    background-color: #233000;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.navbar-logo {
+    padding: 0px 20px;
+}
+
+.navbar-logo img {
+    width: 100px;
+}
+
+.navbar-burger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin: 10px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar-menu a {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navbar-rerservation button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #233000;
+    border-radius: 5px;
+    border-style: none;
+    border: 2px solid #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar-phone h6 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31.47px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+/* content bro......................... */
+
+.home-header {
+    width: 100%;
+    background-color: #233000;
+    padding-top: 30px;
+}
+
+.top-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.top-header-left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.headline-hero {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.headline-hero h1 {
+    font-size: 100px;
+    color: #ffffff;
+}
+
+.headline-hero p {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    opacity: 85%;
+}
+
+.scroll {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 35em;
+    left: -9em;
+    padding-top: 10px;
+}
+
+.scroll h4 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.cooked-meat {
+    width: 80%;
+}
+
+.cooked-meat img {
+    width: 100%;
+    height: auto;
+}
+
+.top-header-right {
+    width: 50%;
+    position: relative;
+    /* left: -50px; */
+    padding-top: 100px;
+}
+
+.spices {
+    width: 80%;
+    height: 150px;
+    position: relative;
+    bottom: 80px;
+    left: -220px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.spices img {
+    width: 150px;
+}
+
+.bottom-header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px 40px 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.diet-box {
+    width: 40%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.diet-box img {
+    width: 100%;
+}
+
+.diet-box h3 {
+    width: 60%;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.diet-box p {
+    width: 60%;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.pepper-bottles {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pepper-bottles img {
+    width: 100%;
+}
+
+.pepper-bottles p {
+    color: #ffffff;
+    width: 80%;
+    margin: 0px auto;
+}
+
+/* ............section home menu................ */
+
+.home-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.menu-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-heading-name h2 {
+    font-size: 80px;
+}
+
+.menu-heading-name p {
+    max-width: 80%;
+    font-size: 20px;
+    opacity: 80%;
+}
+
+.menu-heading-img img {
+    width: 500px;
+}
+
+@media (max-width: 1200px) {
+    .menu-heading {
+        position: relative;
+    }
+
+    .menu-heading-name {
+        background: url('assets/leaf.png') no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-heading-img {
+        display: none;
+    }
+
+    .menu-heading-name h2, .menu-heading-name p {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.pricelist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.pricelists {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.pricelists h6 {
+    font-size: 25px;
+    text-align: right;
+}
+
+.pricelists .dot-line {
+    display: flex;
+    width: 100%;
+}
+
+.dot-line:after {
+    border-bottom: 2px dotted black;
+    content: '';
+    flex: 1;
+}
+
+.pricelists h4 {
+    width: 85%;
+    font-size: 40px;
+}
+
+.pricelists p {
+    width: 90%;
+    font-size: 25px;
+    opacity: 80%;
+}
+
+/* ....................section chef............. */
+
+.chef {
+    width: 100%;
+    height: 20vh;
+    background: #EBF0E4;
+}
+
+/* ..............features........................ */
+.features {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    gap: 20px;
+}
+
+.iconboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconboxes img {
+    width: 150px;
+    height: 150px;
+}
+
+.iconboxes h4 {
+    font-size: 30px;
+    color: #000000;
+    padding: 10px 0px;
+}
+
+.iconboxes p {
+    width: 80%;
+    font-size: 15px;
+    color: #000000;
+    opacity: 90%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* .......section 5 recent posts............. */
+.recent_post {
+    padding: 100px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    /* box-sizing: border-box; */
+}
+
+.recent-LR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    max-width: 500px;
+    /* box-sizing: border-box;  */
+}
+
+.img-btn {
+    display: flex;
+    position: relative;
+}
+
+.img-btn img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.fashion {
+    margin: 20px 20px;
+    position: absolute;
+    right: 0;
+    padding: 5px 10px;
+    border-style: none;
+    background-color: #5E6600;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img-btn-infor {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.person-data {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.person-data img {
+    width: 50px;
+}
+
+.img-btn-infor2 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-btn-infor2 h4 {
+    font-size: 35px;
+}
+
+.img-btn-infor2 .dot-line {
+    display: flex;
+    width: 100%;
+}
+
+.img-btn-infor2 button {
+    width: 100px;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+/* ............................................. */
+.category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.category-heading {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.category-heading h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+.category-heading p {
+    font-size: 25px;
+    opacity: 80%;
+    text-align: center;
+}
+
+.category-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.category-menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.category-menu-items img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.custom-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border-style: none;
+    background-color: transparent;
+    color: #5E6600;
+    cursor: pointer;
+    padding: 20px 20px;
+    font-size: 30px;
+}
+.button-arrow {
+    font-size: 30px;
+}

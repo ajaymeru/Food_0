@@ -30,7 +30,6 @@
                 </ul>
             </div>
         </div>
-
         <div class="navbar-right">
             <div class="navbar-phone">
                 <h6>+86 852 346 000</h6>
@@ -117,19 +116,19 @@
             </div>
         </div>
     </section>
-   <!-- section 3 chef -->
-   <section class="chef">
-    <div class="chef-left">
-        <img id="leaf" src="assets/chefleafleft.png" alt="">
-        <img id="men" src="assets/men-cook.png" alt="">
-    </div>
-    <div class="chef-right">
-        <h1>Excellent<br> Cook</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. </p>
+    <!-- section 3 chef -->
+    <section class="chef">
+        <div class="chef-left">
+            <img id="leaf" src="assets/chefleafleft.png" alt="">
+            <img id="men" src="assets/men-cook.png" alt="">
+        </div>
+        <div class="chef-right">
+            <h1>Excellent<br> Cook</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. </p>
             <img id="leaf2" src="assets/chefleafright.png" alt="">
-    </div>
-</section>
+        </div>
+    </section>
 
     </section>
     <!-- section 4 features -->
@@ -150,36 +149,38 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu</p>
         </div>
     </section>
-     <!-- section 5 Reservation -->
-     <section>
+    <!-- section 5 Reservation -->
+    <section>
         <div class="reserve">
-          <h1>Make a Reservation</h1>
-          <span><h6>Get in touch with restaurnt</h6></span>
-          <div class="dropBox">
-            <div class="box1">
-              <p>16/22/2025</p>
+            <h1>Make a Reservation</h1>
+            <span>
+                <h6>Get in touch with restaurnt</h6>
+            </span>
+            <div class="dropBox">
+                <div class="box1">
+                    <p>16/22/2025</p>
+                </div>
+                <div class="box1">
+                    <img src="./assets/Input with icon (1).png" />
+                </div>
+                <div class="box1">
+                    <img src="./assets/Input with icon.png" />
+                </div>
             </div>
-            <div class="box1">
-              <img src="./assets/Input with icon (1).png" />
-            </div>
-            <div class="box1">
-              <img src="./assets/Input with icon.png" />
-            </div>
-          </div>
-          <div>
-              <button id="button">Book Now</button>
+            <div>
+                <button id="button">Book Now</button>
             </div>
         </div>
-      </section>
+    </section>
 
     <!-- section 5 recent posts -->
     <recent_post class="recent_post">
         <div class="recent-LR">
             <div class="img-btn">
                 <img src="assets/recent-post-left.png" alt="" srcset="">
-                <button class="fashion">Fashion</button>
+                <button class="fashion" onclick="toggleInfo('info1')">Fashion</button>
             </div>
-            <div class="img-btn-infor">
+            <div id="info1" class="img-btn-infor">
                 <div class="person-data">
                     <img src="assets/recent-post-Avatarleft.png" alt="">
                     <h6>Julie Christie &nbsp; &#x2022; &nbsp;October 17,2021 &nbsp; &#x2022;&nbsp; 3:33 pm &nbsp;
@@ -196,9 +197,9 @@
         <div class="recent-LR">
             <div class="img-btn">
                 <img src="assets/recent-post-right.png" alt="" srcset="">
-                <button class="fashion">Fashion</button>
+                <button class="fashion" onclick="toggleInfo('info2')">Fashion</button>
             </div>
-            <div class="img-btn-infor">
+            <div id="info2" class="img-btn-infor">
                 <div class="person-data">
                     <img src="assets/recent-post-Avataright.png" alt="">
                     <h6>Dianne Russell &nbsp; &#x2022; &nbsp;October 17,2021 &nbsp; &#x2022;&nbsp; 3:33 pm &nbsp;
@@ -226,12 +227,13 @@
     <!-- section 7 Category -->
 
     <category class="category">
-        
+
         <div class="category-heading">
             <h1>Calories Energy Balance</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </div>
 
+        <div class="category-menu-container">
         <div class="category-menu">
             <div class="category-menu-items">
                 <img src="assets/starters.png" alt="">
@@ -239,7 +241,7 @@
                     <div class="button-text">Starters</div>
                     <div class="button-arrow">&rarr;</div>
                 </button>
-                
+
 
             </div>
             <div class="category-menu-items">
@@ -256,11 +258,39 @@
                     <div class="button-text">Soups</div>
                     <div class="button-arrow">&rarr;</div>
                 </button>
+            </div>
+
+            <div class="category-menu-items">
+                <img src="assets/starters.png" alt="">
+                <button class="custom-button">
+                    <div class="button-text">Starters</div>
+                    <div class="button-arrow">&rarr;</div>
+                </button>
+
 
             </div>
+            <div class="category-menu-items">
+                <img src="assets/mains.png" alt="">
+                <button class="custom-button">
+                    <div class="button-text">Mains</div>
+                    <div class="button-arrow">&rarr;</div>
+                </button>
+
+            </div>
+            <div class="category-menu-items">
+                <img src="assets/soups.png" alt="">
+                <button class="custom-button">
+                    <div class="button-text">Soups</div>
+                    <div class="button-arrow">&rarr;</div>
+                </button>
+            </div>
+            
         </div>
+    </div>
     </category>
+
     <!--Footer Section-->
+    
     <footer>
         <div class="allfooter">
             <div class="footer">
@@ -282,7 +312,7 @@
                     <div>
                         <h2>Never Miss a Recipe</h2>
                     </div>
-    
+
                     <div class="recipe">
                         <button id="btn">Email Address</button>
                         <p id="p">Join our subscribers and get best recipe delivered each week!</p>

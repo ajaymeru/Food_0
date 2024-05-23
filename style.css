@@ -823,3 +823,47 @@ a {
   }
 
   /* End */
+
+
+  /*effects on Html page*/
+
+  .spices img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    transition: all 1s ease-in ;
+  }
+
+
+.bottom-header .popupImg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .9);
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  /* overflow: scroll; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.bottom-header .popupImg img{
+  width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-header .popupImg span{
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+

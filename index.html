@@ -68,7 +68,7 @@
 
         <div class="bottom-header">
             <div class="diet-box">
-                <img src="assets/diet.png" alt="">
+                <img src="assets/diet.png" alt="" onclick="fullScreenImg(this.src)">
                 <h3>Start to plan your diet today</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu</p>
             </div>
@@ -76,7 +76,12 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu</p>
                 <img src="assets/pepper-bottles.png" alt="">
             </div>
+            <div class="popupImg">
+                <span onclick="close()">&times;</span>
+                <img src="assets/diet.png" alt="">
+            </div>
         </div>
+       
     </section>
     <!-- section 2 menu -->
     <section class="home-menu">

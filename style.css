@@ -545,154 +545,172 @@ a {
   
 
 /* .......section 5 recent posts............. */
-.recent_post {
-    padding: 100px 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 50px;
-    /* box-sizing: border-box; */
+
+ .recent_post {
+  padding: 100px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
 }
 
 .recent-LR {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    width: 100%;
-    max-width: 500px;
-    /* box-sizing: border-box;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .img-btn {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .img-btn img {
-    width: 100%;
-    border-radius: 20px;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .fashion {
-    margin: 20px 20px;
-    position: absolute;
-    right: 0;
-    padding: 5px 10px;
-    border-style: none;
-    background-color: #5E6600;
-    color: #FFFFFF;
-    border-radius: 5px;
-    cursor: pointer;
+  margin: 20px 20px;
+  position: absolute;
+  right: 0;
+  padding: 5px 10px;
+  border-style: none;
+  background-color: #5E6600;
+  color: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .img-btn-infor {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
+  display: none;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.img-btn-infor.visible {
+  display: flex;
 }
 
 .person-data {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .person-data img {
-    width: 50px;
+  width: 50px;
 }
 
 .img-btn-infor2 {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .img-btn-infor2 h4 {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .img-btn-infor2 .dot-line {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .img-btn-infor2 button {
-    width: 100px;
-    border-style: none;
-    background-color: #ffffff;
+  width: 100px;
+  border-style: none;
+  background-color: #ffffff;
 }
 
+
+
+ 
 /* ............................................. */
 .category {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
 }
 
 .category-heading {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .category-heading h1 {
-    font-size: 100px;
-    text-align: center;
+  font-size: 100px;
+  text-align: center;
 }
 
 .category-heading p {
-    font-size: 25px;
-    opacity: 80%;
-    text-align: center;
+  font-size: 25px;
+  opacity: 80%;
+  text-align: center;
+}
+
+.category-menu-container {
+  width: 100%;
+  overflow-x: auto; 
+  white-space: nowrap; 
+  display: flex;
+  justify-content: center;
 }
 
 .category-menu {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
+  display: flex;
+  flex-direction: row; 
+  gap: 20px;
+  width: max-content; 
+  overflow-x: auto;
 }
-
+@media (max-width: 1300px) {
+  .category-menu {
+      overflow-x: scroll;
+  }
+}
 .category-menu-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .category-menu-items img {
-    width: 400px;
-    border-radius: 20px;
+  width: 400px;
+  border-radius: 20px;
 }
 
 .custom-button {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    border-style: none;
-    background-color: transparent;
-    color: #5E6600;
-    cursor: pointer;
-    padding: 20px 20px;
-    font-size: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  border-style: none;
+  background-color: transparent;
+  color: #5E6600;
+  cursor: pointer;
+  padding: 20px 20px;
+  font-size: 30px;
 }
+
 .button-arrow {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 /*Footer Section*/

@@ -68,7 +68,7 @@
 
         <div class="bottom-header">
             <div class="diet-box">
-                <img src="assets/diet.png" alt="" onclick="fullScreenImg(this.src)">
+                <img src="assets/diet.png" alt="" onclick="fullScreenImg('fullScreen')">
                 <h3>Start to plan your diet today</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu</p>
             </div>
@@ -77,7 +77,7 @@
                 <img src="assets/pepper-bottles.png" alt="">
             </div>
             <div class="popupImg">
-                <span onclick="close()">&times;</span>
+                <span onclick="fullScreenImg('close')">&times;</span>
                 <img src="assets/diet.png" alt="">
             </div>
         </div>
@@ -163,13 +163,13 @@
             </span>
             <div class="dropBox">
                 <div class="box1">
-                    <p>16/22/2025</p>
+                    <input type="date" placeholder="Select Date">
                 </div>
                 <div class="box1">
-                    <img src="./assets/Input with icon (1).png" />
+                    <input type="time" placeholder="Select Time">
                 </div>
                 <div class="box1">
-                    <img src="./assets/Input with icon.png" />
+                    <input type="number" placeholder="Select Person" max="10">
                 </div>
             </div>
             <div>

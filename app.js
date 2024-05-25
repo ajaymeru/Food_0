@@ -1,13 +1,15 @@
-var img = document.querySelector(".bottom-header");
+var img = document.querySelector(".popupImg");
 
-function fullScreenImg() {
-  console.log(img.children[2]);
+function fullScreenImg(event) {
+    if(event == 'fullScreen'){
+        img.style.display = 'block'
+    }else{
+        img.style.display = "none";
+    }
+  
+}
 
-  img.children[2].style.display = "block";
-}
-function close() {
-  img.children[2].style.display = "none";
-}
+
 
 // fullScreenImg()
 
@@ -29,7 +31,7 @@ function toggleInfo(infoId) {
 //     this.style.animationPlayState = 'running';
 // });
 
-// Horizantally Scrolling Functionallty
+/* Horizantally Scrolling Functionallty */
 var curretPageIndex = 0
 function horizantallyScroll(event) {
     const nextPage = document.querySelectorAll(".scrollBy");
@@ -49,3 +51,7 @@ function horizantallyScroll(event) {
     } 
     showPage(curretPageIndex)
 }
+
+/* Horizantally Scrolling Functionallty End */
+
+

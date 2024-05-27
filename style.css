@@ -43,10 +43,6 @@ a {
     width: 100px;
 }
 
-.navbar-burger {
-    display: none;
-}
-
 .bar {
     display: block;
     width: 50px;
@@ -96,6 +92,90 @@ a {
     text-align: left;
     color: #FFFFFF;
 }
+@media (max-width: 861px) {
+  .navbar-menu {
+    display: none;
+  }
+
+}
+
+@media (max-width: 570px) {
+  .navbar-left {
+    gap: 10px;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .navbar-right h6,
+  button {
+    font-size: 15px;
+  }
+
+  .navbar-right button {
+    padding: 10px;
+  }
+}
+@media (max-width :450px){
+  .navbar-right h6,
+  button {
+    font-size: 10px;
+  }
+
+  .navbar-right button {
+    font-size: 10px;
+  }
+}
+/* mobile menu */
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  transition: 0.5s;
+  background-image: linear-gradient(rgba(35, 48, 0, 0.7), rgba(35, 48, 0, 0.7)), url(assets/burger-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+
+
 
 /* content bro......................... */
 
@@ -676,6 +756,9 @@ a {
   gap: 20px;
   width: max-content; 
   overflow-x: auto;
+}
+.category-menu::-webkit-scrollbar {
+  display: none;
 }
 @media (max-width: 1300px) {
   .category-menu {

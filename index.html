@@ -17,19 +17,18 @@
                 <img src="assets/navbar-logo.png" alt="">
             </div>
             <div class="navbar-burger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span style="font-size:30px;cursor:pointer; color: white;" onclick="openNav()">&#9776;</span>
             </div>
-            <div class="navbar-menu">
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">Blog</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                </ul>
-            </div>
-        </div>
+            <div id="myNav" class="overlay" >
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#">HOME</a>
+                  <a href="#">MENU</a>
+                  <a href="">BLOGS</a>
+                  <a href="#">ABOUT</a>
+                  <a href="#">CONTACT</a>
+                </div>
+              </div>
         <div class="navbar-right">
             <div class="navbar-phone">
                 <h6>+86 852 346 000</h6>
